@@ -9,10 +9,55 @@
     <title>Yellow Mango</title>
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
-  <body>
+  <body data-sticky-container>
+
+    <header class="sticky" data-sticky data-margin-top="0">
+      <div class="header grid-container">
+        <h1>Yellow Mango</h1>
+
+        <ul class="menu">
+          <li><a class="menu__item" href="#">Como funciona</a></li>
+          <li><a class="menu__item" href="#">Sobre a marca</a></li>
+          <li><a class="menu__item" class="menu__item" href="#">Receitas</a></li>
+          <li><a class="menu__item" href="#">Atendimento</a></li>
+        </ul>
+
+        <ul class="menu menu__assinante">
+          <li><a class="menu-assinante__item" href="#">Entrar</a></li>
+          <li><a class="menu-assinante__item button" href="#">Eu quero</a></li>
+        </ul>
+      </div>
+    </header><!-- /header -->
 
     {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
     {{> body}}
+
+    <footer>
+      <div class="grid-container">
+        <h3>Yellow mango</h3>
+        
+        <menu class="menu submenu">
+          <li><a class="submenu__item" href="#">Como funciona</a></li>
+          <li><a class="submenu__item" href="#">Sobre a marca</a></li>
+          <li><a class="submenu__item" href="#">Receitas</a></li>
+          <li><a class="submenu__item" href="#">Atendimento</a></li>
+        </menu>
+
+        <menu class="menu submenu__secundario">
+          <li><a class="submenu-secundario__item" href="#">Termos de uso</a></li>
+          <li><a class="submenu-secundario__item" href="#">Política de privacidade</a></li>
+        </menu>
+        
+        <section class="submenu align-right">
+          <h4>Siga nas redes sociais</h4>
+          <ul class="menu">
+            <li><a class="submenu-sociais__item" href="#" title="">instagram</a></li>
+            <li><a class="submenu-sociais__item" href="#" title="">facebook</a></li>
+            <li><a class="submenu-sociais__item" href="#" title="">Medium</a></li>
+          </ul>
+        </section>
+      </div>
+    </footer><!-- /footer -->
 
     <script src="{{root}}assets/js/app.js"></script>
   </body>
